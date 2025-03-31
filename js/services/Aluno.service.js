@@ -29,7 +29,7 @@ class AlunoService {
         let local = localStorage.getItem('alunos')
         let alunos = []
         if(local) {
-            alunos = JSON.parse(alunos)
+            alunos = JSON.parse(local)
         }
         alunos.forEach(aluno => {
             this.add(new AlunoModel(aluno))
